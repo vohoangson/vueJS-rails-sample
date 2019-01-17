@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: vo_hoang_son
+  password: 123456
+  pool: 5
+  timeout: 5000
+  host: localhost
+development:
+  <<: *default
+  database: vuejs_rails_app
+test:
+  <<: *default
+  database: vuejs_rails_app
+production:
+  <<: *default
+  database: vuejs_rails_app
